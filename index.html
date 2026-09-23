@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanya Si Jobless</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%98%8E%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="brand">😎 Tanya Si Jobless</div>
+    <span>Curhat tanpa solusi.</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <small>LAGI ADA MASALAH IT?</small>
+        <h1>Tanya Si Jobless.<br>Siapa tahu masalah jadi nambah.</h1>
+        <p>Curhat aja. Kita ngobrol, salahkan server, lalu pura-pura besok <em>coding</em>-nya jalan sendiri.</p>
+        <button onclick="openPay()">Mulai Nangis →</button>
+      </div>
+      <div class="card">
+        <p class="quote">"Gak perlu solusi. Yang penting lega, terus balik lagi besok."</p>
+        <b>— Si Jobless</b>
+      </div>
+    </section>
+
+    <section class="steps">
+      <article>
+        <h3>01. Ceritakan</h3>
+        <p>Jelaskan masalahmu dengan bahasa manusia (bukan bahasa mesin).</p>
+      </article>
+      <article>
+        <h3>02. Saling Menyalahkan</h3>
+        <p>Sesi 30–45 menit untuk bedah masalah dan menyalahkan keadaan.</p>
+      </article>
+      <article>
+        <h3>03. Pulang Bawa Cerita</h3>
+        <p>Dapat validasi bahwa hidup emang berat, lalu tutup laptop.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Modal Parodi -->
+  <div class="modal" id="modal">
+    <div class="checkout card">
+      <button class="x" onclick="closePay()">×</button>
+      <small>TAHAP UJI COBA (Canda deng)</small>
+      <h2>Invoice Kesedihan</h2>
+      
+      <div class="price">
+        <span id="total">Rp49.000</span>
+        <del>Rp99.000</del>
+      </div>
+
+      <label>Nama Panggilan (Bukan nama lengkap, siapa takut)</label>
+      <input type="text" id="name" placeholder="Contoh: Anak Magang yang Lelah">
+
+      <label>Email (Biar kami spam? Enggak deng, bercanda)</label>
+      <input type="email" id="email" placeholder="email@contoh.com">
+
+      <label>Kode Promo</label>
+      <div style="display: flex; gap: 8px;">
+        <input type="text" id="promo" placeholder="Coba ketik: MISKIN">
+        <button class="apply" onclick="applyPromo()">Pakai</button>
+      </div>
+      
+      <p class="promo" id="result"></p>
+
+      <div class="total">
+        <span>Total Tagihan</span>
+        <span id="total-display">Rp49.000</span>
+      </div>
+
+      <button class="pay" onclick="fakePay()">Bayar Pakai Doa →</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
